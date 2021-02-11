@@ -1,3 +1,2 @@
-# ReadMe
- Texas house price Analysis
+Shiny Application of Texas house price analytics 
  
