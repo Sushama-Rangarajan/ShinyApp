@@ -18,9 +18,6 @@ library(reshape)
 house1 <- read.csv("Housing_2020.csv")
 h2 <- subset(house1,house1$PROPERTY.TYPE == "Single Family Residential" | house1$PROPERTY.TYPE == "Townhouse")
 
-#Removing rows with 0 beds since it is practically not possible to have no beds and only baths in a house
-h2 <- h2[-which(h2$BEDS == 0), ]
-
 #Removing 2 obs with Year NAs since we can't impute those observations
 h2 <- h2[-which(is.na(h2$YEAR.BUILT)),]
 
